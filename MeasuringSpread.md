@@ -39,3 +39,22 @@ Outlier: data point that is substantially different from the others
 How do we know what a substantial difference is? A data point is an outlier if:  
 data < Q1 - 1.5 × IQR or  
 data > Q3 + 1.5 × IQR  
+
+
+# How to randomly sample
+
+without replacement
+```
+df.sample(n) # where n is the number of smaples
+```
+
+with sampling
+```
+df.sample(n, replace = True)
+```
+
+if we want to be able to reproduce the output, we set a seed first
+
+```
+np.random.seed(10)
+```
