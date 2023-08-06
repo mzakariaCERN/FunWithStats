@@ -1,0 +1,24 @@
+# How to randomly sample
+
+without replacement
+```
+df.sample(n) # where n is the number of smaples
+```
+
+with sampling
+```
+df.sample(n, replace = True)
+```
+
+if we want to be able to reproduce the output, we set a seed first
+
+```
+np.random.seed(10)
+```
+
+To generate continuous distribution, for interval between 0 and 30, 1000 samples
+```
+np.random.seed(seed=334)
+from scipy.stats import uniform
+uniform.rvs(0, 30, size=1000)
+```
