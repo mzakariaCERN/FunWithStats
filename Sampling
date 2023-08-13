@@ -22,3 +22,30 @@ np.random.seed(seed=334)
 from scipy.stats import uniform
 uniform.rvs(0, 30, size=1000)
 ```
+
+# Binomial Distribution
+
+```
+from scipy.stats import binom
+```
+
+one flip, 8 times
+```
+binom.rvs(1, 0.5, size=8
+```
+
+8 flips, one time
+```
+binom.rvs(8, 0.5, size=1)
+```
+
+Prob getting exacltly 7 heads in 10 attmepts:
+```
+# binom.pmf(num heads, num trials, prob of heads)  
+binom.pmf(7, 10, 0.5)
+```
+
+Prob getting <=7 heads in 10 attempts with a fair coin
+```
+binom.cdf(7, 10, 0.5)
+```
