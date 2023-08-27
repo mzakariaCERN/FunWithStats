@@ -6,3 +6,27 @@ median
 proportion
 
 are all given in a normal distribtution, with average representing the whole population figures. This is regardless of the type of distribution we are drawing our data from: norma, flat, biomial, poisson etc. as long as the draws are independednt
+
+
+```
+# Set seed to 104
+np.random.seed(104)
+
+sample_means = []
+# Loop 100 times
+for i in range(100):
+  # Take sample of 20 num_users
+  samp_20 = amir_deals['num_users'].sample(20, replace=True)
+  # Calculate mean of samp_20
+  samp_20_mean = np.mean(samp_20)
+  # Append samp_20_mean to sample_means
+  sample_means.append(samp_20_mean)
+  
+# Convert to Series and plot histogram
+sample_means_series = pd.Series(sample_means)
+sample_means_series.hist()
+# Show plot
+plt.show()
+
+
+```
