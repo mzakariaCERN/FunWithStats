@@ -1,0 +1,8 @@
+The central limit theorem states that a sampling distribution of a sample statistic approaches the normal distribution as you take more samples, no matter the original distribution being sampled from.
+
+This means, if we draw repeated samples enough time:
+mean
+median
+proportion
+
+are all given in a normal distribtution, with average representing the whole population figures. This is regardless of the type of distribution we are drawing our data from: norma, flat, biomial, poisson etc. as long as the draws are independednt
