@@ -49,3 +49,12 @@ Prob getting <=7 heads in 10 attempts with a fair coin
 ```
 binom.cdf(7, 10, 0.5)
 ```
+
+# Poisson Distribution
+
+```
+from scipy.stats import poisson
+poisson.pnf(5, 8) # calculate prob. of getting 5 lightnings if lambda was 8
+poisson.cdf(5, 8) # prob geting less of equal to 5 lightnings
+poisson.rvs(8, size =  10) # getting the output of 8 drawings
+```
