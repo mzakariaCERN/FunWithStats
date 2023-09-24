@@ -18,3 +18,6 @@ plt.show()
 msleep['sleep_total'].corr(msleep['sleep_rem'])
 
 ```
+
+
+Before using Correlation , need to make sure there is a linear relationship between dependent and control variables. 
